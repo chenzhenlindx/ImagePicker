@@ -46,12 +46,12 @@ public class ImageCropActivity extends ImageBaseActivity implements View.OnClick
 
         //初始化View
         findViewById(R.id.btn_back).setOnClickListener(this);
-        Button btn_ok = (Button) findViewById(R.id.btn_ok);
+        Button btn_ok = findViewById(R.id.btn_ok);
         btn_ok.setText(getString(R.string.ip_complete));
         btn_ok.setOnClickListener(this);
-        TextView tv_des = (TextView) findViewById(R.id.tv_des);
+        TextView tv_des = findViewById(R.id.tv_des);
         tv_des.setText(getString(R.string.ip_photo_crop));
-        mCropImageView = (CropImageView) findViewById(R.id.cv_crop_image);
+        mCropImageView = findViewById(R.id.cv_crop_image);
         mCropImageView.setOnBitmapSaveCompleteListener(this);
 
         //获取需要的参数

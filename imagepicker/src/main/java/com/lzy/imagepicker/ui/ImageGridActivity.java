@@ -106,17 +106,17 @@ public class ImageGridActivity extends ImageBaseActivity implements ImageDataSou
             imagePicker.setSelectedImages(images);
         }
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler);
+        mRecyclerView = findViewById(R.id.recycler);
 
         findViewById(R.id.btn_back).setOnClickListener(this);
-        mBtnOk = (Button) findViewById(R.id.btn_ok);
+        mBtnOk = findViewById(R.id.btn_ok);
         mBtnOk.setOnClickListener(this);
-        mBtnPre = (TextView) findViewById(R.id.btn_preview);
+        mBtnPre = findViewById(R.id.btn_preview);
         mBtnPre.setOnClickListener(this);
         mFooterBar = findViewById(R.id.footer_bar);
         mllDir = findViewById(R.id.ll_dir);
         mllDir.setOnClickListener(this);
-        mtvDir = (TextView) findViewById(R.id.tv_dir);
+        mtvDir = findViewById(R.id.tv_dir);
         if (imagePicker.isMultiMode()) {
             mBtnOk.setVisibility(View.VISIBLE);
             mBtnPre.setVisibility(View.VISIBLE);
